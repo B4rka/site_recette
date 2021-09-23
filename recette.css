@@ -25,9 +25,8 @@ p.categorie {
 
 div.contenu {
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0px 10px 10px;
-    min-width: 350px;
+    margin: 40px 8px 40px 8px;
+    padding: 0px 8px 10px;
     box-shadow: 1px 1px 15px 1px black;
     overflow: visible;
 }
@@ -74,17 +73,17 @@ table.info {
     width: 100%;
     color: white;
     background-color: #6C829DC0;
-    height: 22%;
+    height: 50px;
 }
 
 table.info td {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 
 table.info th {
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: bottom;
     padding-bottom: 8px;
 }
@@ -98,7 +97,7 @@ img.info {
 }
 
 div.colonne {
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -112,11 +111,6 @@ div.colonne h2 {
 
 div.colonne1 {
 display: inline-block;
-margin-right: 10%;
-}
-
-div.colonne2 {
-float: right;
 }
 
 div.ingre p {
@@ -155,3 +149,54 @@ table.preparation tr {
     height: 40px;
 }
 
+/* Style pour ordinateur */
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        background-color: white;
+        margin: 60px 10% 80px 10%;
+        padding: 0px 10px 10px;
+        min-width: 350px;
+        box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.2);
+        overflow: visible;
+    }
+    table.info {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        background-color: #6C829DC0;
+        height: 22%;
+    }
+    table.info td {
+        text-align: center;
+        font-size: 14px;
+        vertical-align: top;
+    }
+    
+    table.info th {
+        font-size: 16px;
+        vertical-align: bottom;
+        padding-bottom: 8px;
+    }
+    div.colonne {
+        width: 45%;
+        margin-top: 20px;
+    }
+
+    div.colonne1 {
+    display: inline-block;
+    margin-right: 10%;
+    }
+    
+    div.colonne2 {
+    float: right;
+    }
+  }
+
+@media only screen and (min-width: 900px) {
+    div.contenu {
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+    }
+  }
